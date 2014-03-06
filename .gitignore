@@ -2,6 +2,11 @@
 *.slo
 *.lo
 *.o
+*.out
+
+#temp files
+*~
+*.swp
 
 # Compiled Dynamic libraries
 *.so
