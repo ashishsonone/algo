@@ -46,6 +46,11 @@ class A{
             catch(Exception e){
             }
             System.out.println(msg + ": work ended");
+
+            synchronized(R.inc_lock){
+                R.count--;
+                System.out.println(msg + ": count decreased to " + R.count);
+            }
         }
     }
 
