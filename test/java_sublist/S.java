@@ -15,16 +15,19 @@ import java.util.List;
 
 class S{
     public static void main(String[] args){
-        List<Integer> l = new ArrayList<>();
+        List<String> l = new ArrayList<>();
         int limit = 2;
-        l.add(0);
-        l.add(1);
-        l.add(2);
-        l.add(3);
-        l.add(4);
-        l.add(5);
+        l.add("0");
+        l.add("1");
+        l.add("2");
+        l.add("3");
+        l.add("4");
+        l.add("5");
         System.out.println("original :" + l);
         l.subList(0, l.size()-limit).clear(); //subList(from, to) : where : from[inclusive], to[exclusive]
         System.out.println("keeping only last " + limit + " elements : " + l);
+
+        l.remove("5");
+        System.out.println("removing '5' : " + l);
     }
 }
